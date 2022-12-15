@@ -60,6 +60,7 @@ li {
   list-style: none;
 }
 
+/* 버튼의 기본 속성을 없애주고 밑에서 다시 꾸며준다. */
 button {
   background-color: transparent;
   cursor: pointer;
@@ -153,9 +154,45 @@ border-radius: var(--size-border-radius);
   border-radius: var(--size-border-radius);
 }
 
-#about{
-  justify-content:center;
-  align-items:center;
+/* Section Common */
+.section{
+ padding: 50px;
+ text-align:center; 
+ max-width: 1200px;
+ margin:auto;
+}
+
+/* About */
+.about__majors{
+  display: flex;
+  justify-content: space-between;
+  margin: 80px 0;
+}
+.major__icon{
+  width: 170px;
+  height: 170px;
+  line-height: 170px;
+  font-size: 70px;
+  color:var(--color-blue);
+  margin:auto;
+  padding-left:50px;
+  border: 1px solid var(--color-blue);
+  border-radius: 50%;
+  margin-bottom: 16px;
+}
+.major__icon i{
+  transition: all 300ms ease;
+}
+.major__icon:hover i{
+  color:var(--color-pink);
+  transform: rotate(-30deg) scale(1.1);
+}
+.major__title, .major__description{
+  color:var(--color-dark-grey);
+}
+
+.major__description{
+  font-size:var(--font-small);
 }
 h1{
   text-align:center;
@@ -163,7 +200,4 @@ h1{
 p{
   text-align:center;
 }
-.about__majors{
-  display:flex;
-  justify-content:space-between;
-}
+
