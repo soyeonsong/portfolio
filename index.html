@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,22 +8,23 @@
   <title>soyeon's Portfolio</title>
   <meta name="description" content="Portfolio for Awesome Engineer soyeon">
   <meta name="author" content="soyeon">
-  <link rel="icon"  type="image/png" href="images/favicon.png">
+  <link rel="icon" type="image/png" href="images/favicon.png">
   <script src="https://kit.fontawesome.com/6b4bde49d7.js" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href  ="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="style.css">
-<script src="main.js" defer></script>
-<!-- html 이 parsing 되는 동안 다운로드 받 되, html문서가 다 작동한 후에  -->
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
+  <!-- html 이 parsing 되는 동안 다운로드 받 되, html문서가 다 작동한 후에  -->
 </head>
+
 <body>
- 
+
   <!-- navbar -->
   <nav id="navbar">
     <div class="navbar__logo">
-      <img class="logo" src="images/favicon.png" alt="로고" >
+      <img class="logo" src="images/favicon.png" alt="로고">
       <a href="#">soyeon</a>
     </div>
     <div class="nav__menu">
@@ -38,18 +40,14 @@
   </nav>
   <!-- Home -->
   <section id="home">
-    <img 
-     src="images/profile.jpg" 
-     alt="soyeon's portfolio" 
-     class="home__avatar"
-    >
+    <img src="images/profile.jpg" alt="soyeon's portfolio" class="home__avatar">
     <h1 class="home__title">Hello,<br> I'm Dream Coder</h1>
     <h2 class="home__description">A software Engineer</h2>
     <button class="home__contactme">CONTACT ME</button>
 
   </section>
-  <!-- About -->  
-  <section id="about">
+  <!-- About -->
+  <section id="about" class="section">
     <h1>About Me</h1>
     <p>A message</p>
     <div class="about__majors">
@@ -86,98 +84,114 @@
     </div>
     <div class="about__jobs">
       <div class="job">
-        <img src="images/jobs/logo_samole.png" alt="로고" class="job__logo">
-        <p class="job__name">경력명</p>
-        <p class="job__period">경력기간</p>
-      </div>
-      <div class="job">
-        <img src="images/jobs/logo_samole.png" alt="로고" class="job__logo">
-        <p class="job__name">경력명</p>
-        <p class="job__period">경력기간</p>
+        <img src="images/jobs/logo_sample.png" alt="로고" class="job__logo">
+        <div class="job__description">
+          <p class="job__name">경력명</p>
+          <p class="job__period">경력기간</p>
+        </div>
+
+        <img src="images/jobs/logo_sample.png" alt="로고" class="job__logo">
+        <div class="job__description">
+          <p class="job__name">경력명</p>
+          <p class="job__period">경력기간</p>
+        </div>
       </div>
     </div>
-    
+
   </section>
   <!-- skills -->
-  <section id="skills">
-    <h1>Skills</h1>
-    <h2>Skills & Attributes</h2>
-    <p>나의 역량</p>
-    <div class="skillset">
-      <div class="skill__left">
-        <h3 class="skillset__title">skills</h3>
-        <div class="skill">
-          <div class="skill__description">
-            <span>HTML</span>
-            <span>99%</span>
+  <section id="skills" class="section">
+    <div class="section__container">
+      <h1>Skills</h1>
+      <h2>Skills & Attributes</h2>
+      <p>
+        Experience with all phases of the software life-cycle. Passion for
+        learning new technologies. Capable of working within a team environment
+        and independently. Ability to plan and time schedule, work under strict
+        time pressure and adapt quickly when needed.
+      </p>
+      <div class="skillset">
+        <div class="skillset__left">
+          <h3 class="skillset__title">Skills</h3>
+          <div class="skill">
+            <div class="skill__description">
+              <span>HTML</span>
+              <span>99%</span>
+            </div>
             <div class="skill__bar">
-              <div class="skill__value"></div>
+              <div class="skill__value" style="width: 99%;"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="skill__description">
+              <span>CSS</span>
+              <span>90%</span>
+            </div>
+            <div class="skill__bar">
+              <div class="skill__value" style="width: 90%;"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="skill__description">
+              <span>JavaScript</span>
+              <span>90%</span>
+            </div>
+            <div class="skill__bar">
+              <div class="skill__value" style="width: 90%;"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="skill__description">
+              <span>TypeScript</span>
+              <span>80%</span>
+            </div>
+            <div class="skill__bar">
+              <div class="skill__value" style="width: 80%;"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="skill__description">
+              <span>React</span>
+              <span>88%</span>
+            </div>
+            <div class="skill__bar">
+              <div class="skill__value" style="width: 88%;"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <div class="skill__description">
+              <span>NodeJS</span>
+              <span>77%</span>
+            </div>
+            <div class="skill__bar">
+              <div class="skill__value" style="width: 77%;"></div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="skill">
-        <div class="skill__description">
-          <span>CSS</span>
-          <span>99%</span>
-          <div class="skill__bar">
-            <div class="skill__value"></div>
+        <div class="skillset__right">
+          <div class="tools">
+            <h3 class="skillset__title">Tools</h3>
+            <ul class="tools__list">
+              <li><span>Visual Studio Code</span></li>
+              <li><span>IntelliJ</span></li>
+              <li><span>Android Studio Code</span></li>
+              <li><span>iOS development tools</span></li>
+              <li><span>Sketch app</span></li>
+            </ul>
+          </div>
+          <div class="etc">
+            <h3 class="skillset__title">Etc</h3>
+            <ul class="etc__list">
+              <li><span>Git</span></li>
+              <li><span>Scrum master</span></li>
+              <li><span>Math</span></li>
+            </ul>
           </div>
         </div>
-      </div>
-    </div>
-    <div class="skill">
-      <div class="skill__description">
-        <span>REACT</span>
-        <span>99%</span>
-        <div class="skill__bar">
-          <div class="skill__value"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="skill">
-    <div class="skill__description">
-      <span>VUE</span>
-      <span>99%</span>
-      <div class="skill__bar">
-        <div class="skill__value"></div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="skill">
-  <div class="skill__description">
-    <span>NODE.js</span>
-    <span>99%</span>
-    <div class="skill__bar">
-      <div class="skill__value"></div>
-    </div>
-  </div>
-</div>
-</div>
-      <div class="skillset_right">
-        <div class="tools">
-          <h3 class="skillset__title">Tools</h3>
-          <ul class="tools__list">
-            <li><span>Visual Studio Code</span></li>
-            <li><span>IntelliJ</span></li>
-            <li><span>IOS development tools</span></li>
-            <li><span>Sketch app</span></li>
-          </ul>
-        </div>
-        <div class="etc">
-          <h3 class="skillset__title">ETC</h3>
-          <ul class="etc__list">
-            <li><span>git</span></li>
-            <li><span></span></li>
-          </ul>
-        </div>
-      </div>
     </div>
   </section>
   <!-- work -->
-  <section id="work">
+  <section id="work" class="section">
     <h1>My work</h1>
     <h3>Projects</h3>
     <div class="work__categories">
@@ -189,43 +203,35 @@
 
     <div class="work__projects">
       <!-- 프로젝트  깃헙 주소를 연결해 두면 된다. -->
-      <a href="" 
-      class="project" 
-      target="blank">
-      <img src="images/project_image_sample.png" alt="project screen shot" class="project__img">
-      <div class="project__description">
-        <h3>Youtube Site</h3>
-        <span>Clone coding with( )</span>
-      </div>
-    </a>
-    <a href="" 
-      class="project" 
-      target="blank">
-      <img src="images/project_image_sample.png" alt="project screen shot" class="project__img">
-      <div class="project__description">
-        <h3>Youtube Site</h3>
-        <span>Clone coding with( )</span>
-      </div>
-    </a>
-    <a href="" 
-      class="project" 
-      target="blank">
-      <img src="images/project_image_sample.png" alt="project screen shot" class="project__img">
-      <div class="project__description">
-        <h3>Youtube Site</h3>
-        <span>Clone coding with( )</span>
-      </div>
-    </a>
-    <a href="" 
-      class="project" 
-      target="blank">
-      <img src="images/project_image_sample.png" alt="project screen shot" class="project__img">
-      <div class="project__description">
-        <h3>Youtube Site</h3>
-        <span>Clone coding with( )</span>
-      </div>
-    </a>
-    
+      <a href="" class="project" target="blank">
+        <img src="images/project_image_sample.png" alt="project screen shot" class="project__img">
+        <div class="project__description">
+          <h3>Youtube Site</h3>
+          <span>Clone coding with( )</span>
+        </div>
+      </a>
+      <a href="" class="project" target="blank">
+        <img src="images/project_image_sample.png" alt="project screen shot" class="project__img">
+        <div class="project__description">
+          <h3>Youtube Site</h3>
+          <span>Clone coding with( )</span>
+        </div>
+      </a>
+      <a href="" class="project" target="blank">
+        <img src="images/project_image_sample.png" alt="project screen shot" class="project__img">
+        <div class="project__description">
+          <h3>Youtube Site</h3>
+          <span>Clone coding with( )</span>
+        </div>
+      </a>
+      <a href="" class="project" target="blank">
+        <img src="images/project_image_sample.png" alt="project screen shot" class="project__img">
+        <div class="project__description">
+          <h3>Youtube Site</h3>
+          <span>Clone coding with( )</span>
+        </div>
+      </a>
+
     </div>
   </section>
   <!-- Testimonials -->
@@ -264,6 +270,7 @@
     <p class="contact__rights">2022 Dream Coding Soyeon</p>
   </section>
 
-  
+
 </body>
+
 </html>
