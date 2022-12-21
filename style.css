@@ -315,10 +315,13 @@ border-radius: var(--size-border-radius);
 .project {
   position: relative;
   /* project__description의 absolute를 위한 relative설정 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 280px;
   height: 250px;
   margin: 2px;
-  background-color: yellow;
+  background-color: var(--color-light-white);
 }
 
 .project__img{
@@ -336,6 +339,14 @@ border-radius: var(--size-border-radius);
   display: flex;
   flex-direction: column;
   justify-content: center;
+  opacity: 0;
+  transition: all var(--animation-duration) ease-in;
+  transform: translateY(10px);
+}
+
+.project:hover .project__description{
+  opacity:0.8;
+  transform:translateY(0px); 
 }
 .project__description h3{
   color:var(--color-white);
@@ -344,11 +355,45 @@ border-radius: var(--size-border-radius);
 .project__description h3:after{
   content:'';
   position: relative;
+  display:block;
   left: 50%;
   width: 25px;
   height: 2px;
   margin-left: -12px;
   margin-top: 8px;
-  
   background-color: var(--color-dark-white);
+}
+/* Testimonial */
+#testimonial {
+  background-color:var(--color-light-white);
+}
+.testimonials{
+  margin:40px;
+}
+.testimonial{
+  display: flex;
+  margin:32px;
+}
+.testimonial__avatar{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+.testimonial__avatar:nth-child(odd){
+  margin-right: 40px;
+}
+.testimonial__avatar:nth-child(even){
+  margin-left:40px;
+}
+.testimonial__speech-bubble p [
+  color :var(--color-light-grey);
+]
+.testimonial__speech-bubble a{
+  color:var(--color-pink);
+}
+
+.testimonial__speech-bubble{
+  padding:18px;
+  background-color:var(--color-white);
+  border-radius: var(--size-border-radius);
 }
