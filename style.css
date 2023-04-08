@@ -168,6 +168,9 @@ border-radius: var(--size-border-radius);
 }
 
 /* About */
+#about{
+  background-color: rgb(254, 247, 254);
+}
 .about__majors{
   display: flex;
   justify-content: space-around;
@@ -199,6 +202,10 @@ border-radius: var(--size-border-radius);
 .major__description{
   font-size:var(--font-small);
 }
+.about__jobs{
+  background-color: rgb(245, 244, 242);
+  margin: 0;
+}
 .job{
   display:flex;
   align-items: center;
@@ -225,6 +232,7 @@ border-radius: var(--size-border-radius);
 
 #skills{
   background-color:var(--color-yellow);
+  margin-top: 0;
 }
 .skillset{
   display:flex;

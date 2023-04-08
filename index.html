@@ -16,7 +16,7 @@
 
   <link rel="stylesheet" href="style.css">
   <script src="main.js" defer></script>
-  <!-- html 이 parsing 되는 동안 다운로드 받 되, html문서가 다 작동한 후에  -->
+
 </head>
 
 <body>
@@ -41,7 +41,7 @@
   <!-- Home -->
   <section id="home">
     <img src="images/profile.jpg" alt="soyeon's portfolio" class="home__avatar">
-    <h1 class="home__title">Hello,<br> I'm Dream Coder</h1>
+    <h1 class="home__title">Hello,<br> I'm soyeon</h1>
     <h2 class="home__description">A software Engineer</h2>
     <button class="home__contactme">CONTACT ME</button>
 
@@ -49,28 +49,8 @@
   <!-- About -->
   <section id="about" class="section">
     <h1>About Me</h1>
-    <p>A message</p>
+    <p>끊임없이 성장해 나가는 개발자 송소연입니다.</p>
     <div class="about__majors">
-      <div class="major">
-        <div class="major__icon">
-          <i class="fa-brands fa-html5"></i>
-        </div>
-        <div class="major__title">Front-end</div>
-        <div class="major__description">
-          HTML,CSS,JavaScript,TypeScript,
-          <br>React,Vue,Web APIs
-        </div>
-      </div>
-      <div class="major">
-        <div class="major__icon">
-          <i class="fa-brands fa-html5"></i>
-        </div>
-        <div class="major__title">Front-end</div>
-        <div class="major__description">
-          HTML,CSS,JavaScript,TypeScript,
-          <br>React,Vue,Web APIs
-        </div>
-      </div>
       <div class="major">
         <div class="major__icon">
           <i class="fa-brands fa-html5"></i>
@@ -84,16 +64,20 @@
     </div>
     <div class="about__jobs">
       <div class="job">
-        <img src="images/jobs/logo_sample.png" alt="로고" class="job__logo">
+        <img src="images/jobs/anyang_univ.png" alt="로고" class="job__logo" style="width:15px,height:30px">
         <div class="job__description">
-          <p class="job__name">경력명</p>
-          <p class="job__period">경력기간</p>
+          <p class="job__name">안양대학교 정보통신 공학과 졸업</p>
+          <p class="job__period"></p>
         </div>
-
-        <img src="images/jobs/logo_sample.png" alt="로고" class="job__logo">
+        <img src="images/jobs/likelion.png" alt="로고" class="job__logo" style="width:15px,height:20px">
         <div class="job__description">
-          <p class="job__name">경력명</p>
-          <p class="job__period">경력기간</p>
+          <p class="job__name">멋쟁이 사자처럼 프론트엔드 스쿨 수료</p>
+          <p class="job__period"></p>
+        </div>
+        <img src="images/jobs/logo_sample.png" alt="로고" class="job__logo"style="width:15px,height:20px">
+        <div class="job__description">
+          <p class="job__name">2022 오픈소스 컨트리뷰션 챌린지 과정 수료</p>
+          <p class="job__period"></p>
         </div>
       </div>
     </div>
@@ -160,24 +144,23 @@
           </div>
           <div class="skill">
             <div class="skill__description">
-              <span>NodeJS</span>
-              <span>77%</span>
+              <span>Java</span>
+              <span>20%</span>
             </div>
             <div class="skill__bar">
-              <div class="skill__value" style="width: 77%;"></div>
+              <div class="skill__value" style="width: 20%;"></div>
             </div>
           </div>
         </div>
+      
         <div class="skillset__right">
           <div class="tools">
             <h3 class="skillset__title">Tools</h3>
             <ul class="tools__list">
               <li><span>Visual Studio Code</span></li>
               <li><span>IntelliJ</span></li>
-              <li><span>Android Studio Code</span></li>
-              <li><span>iOS development tools</span></li>
-              <li><span>Sketch app</span></li>
-            </ul>
+              <li><span>Spring</span></li>
+             </ul>
           </div>
           <div class="etc">
             <h3 class="skillset__title">Etc</h3>
@@ -204,63 +187,42 @@
     </div>
 
     <div class="work__projects">
-      <!-- 프로젝트  깃헙 주소를 연결해 두면 된다. -->
-      <a href="" class="project" target="blank">
-        <img src="images/project_image_sample.png" alt="project screen shot" class="project__img">
+      
+      <a href="https://storied-lolly-7a9656.netlify.app/" class="project" target="blank">
+        <img src="images/todo.png" alt="project screen shot" class="project__img">
         <div class="project__description">
-          <h3>Youtube Site</h3>
-          <span>Clone coding with( )</span>
+          <h3>To-DO-App</h3>
+          <span>리액트 컴포넌트를 이용해 만든 다크모드를 지원하는 투두 어플리케이션입니다.
+            버튼을 누르면 어플리케이션으로 이동합니다.
+          </span>
+        </div>
+      </a>
+      <a href="https://clinquant-halva-70c528.netlify.app/" class="project" target="blank">
+        <img src="images/portfolio_image.png" alt="project screen shot" class="project__img">
+        <div class="project__description">
+          <h3>포트폴리오 사이트입니다. 아직 미완성이며 추후 동적 기능을 업그레이드해 나갈 예정입니다. </h3>
+          <span>portfolio</span>
         </div>
       </a>
       <a href="" class="project" target="blank">
         <img src="images/project_image_sample.png" alt="project screen shot" class="project__img">
         <div class="project__description">
-          <h3>Youtube Site</h3>
-          <span>Clone coding with( )</span>
+          <h3>추가할 프로젝트 입니다.</h3>
+          <span></span>
         </div>
       </a>
       <a href="" class="project" target="blank">
         <img src="images/project_image_sample.png" alt="project screen shot" class="project__img">
         <div class="project__description">
-          <h3>Youtube Site</h3>
-          <span>Clone coding with( )</span>
-        </div>
-      </a>
-      <a href="" class="project" target="blank">
-        <img src="images/project_image_sample.png" alt="project screen shot" class="project__img">
-        <div class="project__description">
-          <h3>Youtube Site</h3>
-          <span>Clone coding with( )</span>
+          <h3>추가할 프로젝트입니다.</h3>
+          <span></span>
         </div>
       </a>
 
     </div>
       
   </section>
-  <!-- Testimonials -->
-  
-    <section id="testimonials">
-      <div class="section__container">
-        <h1>Testimonial</h1>
-        <h3>See what they say about me</h3>
-        <div class="testimonials">
-          <div class="testimonial">
-            <img src="images/testimonial_sample.jpg" alt="testimonial__avatar">
-            <div class="testimonial__speech-bubble">
-              <p>soyeon is very powerful engineer</p>
-              <p class="name"><a href="">Jack</a></p>
-            </div>
-          </div>
-          <div class="testimonial">
-            <img src="images/testimonial_sample.jpg" alt="testimonial__avatar">
-            <div class="testimonial__speech-bubble">
-              <p>soyeon is very powerful engineer</p>
-              <p class="name"><a href="">Jack</a></p>
-            </div>
-          </div>
-        </div>
-      </div>
-     </section>
+
   
   <!-- Contact -->
   <section id="contact">
