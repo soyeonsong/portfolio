@@ -180,30 +180,38 @@
     <h1>My work</h1>
     <h3>Projects</h3>
     <div class="work__categories">
-      <button class="category__btn active">project n1<span class="category__count">8</span></button>
-      <button class="category__btn">project n2<span class="category__count">3</span></button>
-      <button class="category__btn">project n3<span class="category__count">3</span></button>
-      <button class="category__btn">project n4<span class="category__count">2</span></button>
+      <button class="category__btn active">project n1<span class="category__count"></span></button>
+      <button class="category__btn">project n2<span class="category__count"></span></button>
+      <button class="category__btn">project n3<span class="category__count"></span></button>
+      <button class="category__btn">project n4<span class="category__count"></span></button>
     </div>
+    
 
     <div class="work__projects">
-      
-      <a href="https://storied-lolly-7a9656.netlify.app/" class="project" target="blank">
-        <img src="images/todo.png" alt="project screen shot" class="project__img">
-        <div class="project__description">
-          <h3>To-DO-App</h3>
-          <span>리액트 컴포넌트를 이용해 만든 다크모드를 지원하는 투두 어플리케이션입니다.
-            버튼을 누르면 어플리케이션으로 이동합니다.
-          </span>
-        </div>
-      </a>
-      <a href="https://clinquant-halva-70c528.netlify.app/" class="project" target="blank">
+      <div class="project">
+        <a href="https://storied-lolly-7a9656.netlify.app/"  target="blank">
+          <img src="images/todo.png" alt="project screen shot" class="project__img">
+          <div class="project__description">
+            <h3>To-Do-App</h3>
+            <span>리액트 컴포넌트를 이용해 만든 다크모드를 지원하는 To-Do-App입니다.
+              버튼을 누르면 어플리케이션으로 이동합니다.
+
+            </span>
+            <span>깃헙:https://github.com/soyeonsong/To-do-App/tree/master</span>
+          </div>
+        </a>
+        <a href="https://github.com/soyeonsong/To-do-App/tree/master"><span>깃헙</span></a>
+      </div>
+     <div class="project">
+      <a href="https://github.com/soyeonsong/portfolio" class="project" target="blank">
         <img src="images/portfolio_image.png" alt="project screen shot" class="project__img">
         <div class="project__description">
           <h3>포트폴리오 사이트입니다. 아직 미완성이며 추후 동적 기능을 업그레이드해 나갈 예정입니다. </h3>
           <span>portfolio</span>
         </div>
       </a>
+     </div>
+      
       <a href="" class="project" target="blank">
         <img src="images/project_image_sample.png" alt="project screen shot" class="project__img">
         <div class="project__description">
@@ -227,7 +235,8 @@
   <!-- Contact -->
   <section id="contact">
     <h1 class="contact__title">Let's talk</h1>
-    <h2 class="contact__email">dream.coder.ellie@gmail.com</h2>
+    <h2 class="contact__email">thdus970130@gmail.com</h2>
+    <a class="github"href="https://github.com/soyeonsong?tab=repositories" >github:https://github.com/soyeonsong?tab=repositories</a>
     <div class="contact__links">
       <a href="https://github.com/soyeonsong" target="_blank">
         <i class="fa fab-github"></i>
@@ -236,7 +245,6 @@
         <i class="fa fa-linkedin-square"></i>
       </a>
     </div>
-    <p class="contact__rights">2022 Dream Coding Soyeon</p>
   </section>
 
 
